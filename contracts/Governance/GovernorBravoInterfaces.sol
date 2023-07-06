@@ -90,7 +90,7 @@ contract GovernorBravoDelegateStorageV1 is GovernorBravoDelegatorStorage {
     CompInterface public comp;
 
     /// @notice The official record of all proposals ever proposed
-    mapping (uint => Proposal) public proposals;
+    Proposal[] public proposals;
 
     /// @notice The latest proposal for each proposer
     mapping (address => uint) public latestProposalIds;

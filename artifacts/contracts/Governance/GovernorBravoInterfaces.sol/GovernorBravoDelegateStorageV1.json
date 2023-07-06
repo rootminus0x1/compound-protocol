@@ -1,0 +1,224 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "GovernorBravoDelegateStorageV1",
+  "sourceName": "contracts/Governance/GovernorBravoInterfaces.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "comp",
+      "outputs": [
+        {
+          "internalType": "contract CompInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialProposalId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "latestProposalIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "pendingAdmin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proposalCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proposalThreshold",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposals",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "proposer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "eta",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endBlock",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "forVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "againstVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "abstainVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "canceled",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "executed",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "timelock",
+      "outputs": [
+        {
+          "internalType": "contract TimelockInterface",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "votingDelay",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "votingPeriod",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506102e9806100206000396000f3fe608060405234801561001057600080fd5b50600436106100b45760003560e01c80635c60da1b116100715780635c60da1b146101a5578063b58131b0146101b8578063d33219b4146101c1578063da35c664146101d4578063f851a440146101dd578063fc4eee42146101f057600080fd5b8063013cf08b146100b957806302a251a314610127578063109d0af81461013e57806317977c611461016957806326782247146101895780633932abb11461019c575b600080fd5b6100cc6100c736600461026a565b6101f9565b604080519a8b526001600160a01b0390991660208b0152978901969096526060880194909452608087019290925260a086015260c085015260e084015215156101008301521515610120820152610140015b60405180910390f35b61013060045481565b60405190815260200161011e565b600954610151906001600160a01b031681565b6040516001600160a01b03909116815260200161011e565b610130610177366004610283565b600b6020526000908152604090205481565b600154610151906001600160a01b031681565b61013060035481565b600254610151906001600160a01b031681565b61013060055481565b600854610151906001600160a01b031681565b61013060075481565b600054610151906001600160a01b031681565b61013060065481565b600a818154811061020957600080fd5b60009182526020909120600e90910201805460018201546002830154600784015460088501546009860154600a870154600b880154600c909801549698506001600160a01b0390951696939592949193909260ff808216916101009004168a565b60006020828403121561027c57600080fd5b5035919050565b60006020828403121561029557600080fd5b81356001600160a01b03811681146102ac57600080fd5b939250505056fea26469706673582212206728bbdc0e7676632bd95856e2ada0dd086bd7f052512fa7e63a6946c8ddf2d664736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100b45760003560e01c80635c60da1b116100715780635c60da1b146101a5578063b58131b0146101b8578063d33219b4146101c1578063da35c664146101d4578063f851a440146101dd578063fc4eee42146101f057600080fd5b8063013cf08b146100b957806302a251a314610127578063109d0af81461013e57806317977c611461016957806326782247146101895780633932abb11461019c575b600080fd5b6100cc6100c736600461026a565b6101f9565b604080519a8b526001600160a01b0390991660208b0152978901969096526060880194909452608087019290925260a086015260c085015260e084015215156101008301521515610120820152610140015b60405180910390f35b61013060045481565b60405190815260200161011e565b600954610151906001600160a01b031681565b6040516001600160a01b03909116815260200161011e565b610130610177366004610283565b600b6020526000908152604090205481565b600154610151906001600160a01b031681565b61013060035481565b600254610151906001600160a01b031681565b61013060055481565b600854610151906001600160a01b031681565b61013060075481565b600054610151906001600160a01b031681565b61013060065481565b600a818154811061020957600080fd5b60009182526020909120600e90910201805460018201546002830154600784015460088501546009860154600a870154600b880154600c909801549698506001600160a01b0390951696939592949193909260ff808216916101009004168a565b60006020828403121561027c57600080fd5b5035919050565b60006020828403121561029557600080fd5b81356001600160a01b03811681146102ac57600080fd5b939250505056fea26469706673582212206728bbdc0e7676632bd95856e2ada0dd086bd7f052512fa7e63a6946c8ddf2d664736f6c634300080a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

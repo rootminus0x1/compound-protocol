@@ -20,16 +20,26 @@
   "author": "Compound Finance",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
     "bignumber.js": "9.0.0",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^3.2.0",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.6",
     "jest-diff": "^26.4.2",
     "jest-junit": "^11.1.0",
     "prettier": "^1.19.0",
     "solhint": "^3.3.7",
-    "solparse": "^2.2.8"
+    "solparse": "^2.2.8",
+    "xdeployer": "^1.1.1"
   },
   "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@solidity-parser/parser": "^0.13.2",
-    "eth-saddle": "^0.1.25"
+    "eth-saddle": "^0.1.25",
+    "usb": "^2.5.2"
   },
   "resolutions": {
     "scrypt.js": "https://registry.npmjs.org/@compound-finance/ethereumjs-wallet/-/ethereumjs-wallet-0.6.3.tgz",
